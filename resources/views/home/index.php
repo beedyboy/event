@@ -29,7 +29,7 @@ echo $this->Beedy->getCompany();
                                     </div>
                                 </div>
                                  <?php if(actionAcl('User', 'r')):  ?>
-                                <a href="<?=base_url.'event/list'?>">
+                                <a href="<?=base_url.'user'?>">
                                     <div class="footer">
                                     <hr />
                                     <div class="stats">

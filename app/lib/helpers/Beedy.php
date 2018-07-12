@@ -13,8 +13,12 @@ $newSystem = new Software('softwares');
 $this->_Software = $newSystem->findById($org_id); 
 
  
+/*
+ $newSetting = new Setting('Settings');
 
-$this->_Setting = $this->findWhere('setting',['conditions'=> 'org_id = ?', 'bind' => [$org_id] ]);
+$setArray = [ 'conditions'=> 'org_id = ?', 'bind' => [$org_id]  ];
+$this->_Setting = $newSetting->findWhere('settings',$setArray);*/
+// $this->_Setting = $newSetting->findWhere('settings',['conditions'=> 'org_id = ?', 'bind' => [$org_id] ]);
 
 
 $User = new User('users'); 
